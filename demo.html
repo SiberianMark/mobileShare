@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>移动端分享插件--兼容各个浏览器 demo</title>
+	<link rel="stylesheet" href="./mobileShare.css">
+	<script src="./jquery.min.js"></script>
+
+</head>
+<body>
+	<div class="share-btn" style="width:100%; height:50px;font-size:20px;text-align:center" >分享</div>
+	<!--分享-->
+	<div class="dialog-bg" id="share-dialog"></div>	
+</body>
+<script>
+	var shareConfig = {
+		url: window.location.href,// 分享的网页链接
+        title: '移动端分享插件',// 标题
+        desc: '移动端分享插件',// 描述
+        img: '',
+        img_title: '移动端分享插件'
+	};
+</script>
+<script src="./nativeShare.js"></script>
+<script src="./Share.js"></script>
+</html>

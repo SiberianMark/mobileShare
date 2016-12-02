@@ -1,0 +1,124 @@
+#share-dialog{display: none;width:100%;height: 10rem;position: fixed;bottom: 0;;}
+.is-visible{display: block!important;}
+/* 分享样式 */
+.share-content {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: #efefef;
+    text-align: center;
+    z-index: 11000;
+}
+
+.dialog-bg .share {
+    background: #fff;
+}
+
+.share-qq-uc, .share-other, .share-pc, .share-weixin {
+    display: none;
+}
+
+.share-content .share .share-title {
+    font-size: 1.4rem;
+    color: #4a4a4a;
+    height: 37px;
+    line-height: 37px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.share ul.share-target-list {
+    padding-top: 14px;
+}
+
+.share ul.share-target-list li {
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+    max-width: 164px;
+    margin-bottom: 18px;
+}
+
+.share ul.share-target-list li img {
+    display: block;
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+}
+
+.share ul.share-target-list li p {
+    width: 100%;
+    margin: 7px auto;
+    font-size: 13px;
+    color: #808080;
+}
+
+
+.share-cancel {
+    font-size: 1.7rem;
+    color: #252525;
+    height: 45px;
+    line-height: 45px;
+    background: #fff;
+    margin-top: 10px;
+}
+/* 修改百度分享插件样式 */
+.bdshare-button-style0-16 a {
+    text-align: center;
+    font-size: 1.1rem !important;
+    color: #808080;
+    padding: 55px 0 0 0 !important;
+    line-height: normal !important;
+    width: 25%;
+    max-width: 150px;
+    height: auto !important;
+    margin: 14px 0 !important;
+    position: relative !important;
+    background: none !important;
+    -webkit-box-flex: 1 !important;
+    -webkit-flex: 1 !important;
+    flex: 1 !important;
+}
+
+.share-content .bdshare-button-style0-16 a:after {
+    content: " ";
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 53%;
+    top: 0;
+    -webkit-transform: translate(-60%, 0);
+    transform: translate(-60%, 0);
+}
+
+.bdshare-button-style0-16 a.bds_tsina:after {
+    background: url("./image/share/weibo.png") no-repeat;
+    background-size: cover;
+}
+
+.bdshare-button-style0-16 a.bds_sqq:after {
+    background: url("./image/share/qq.png") no-repeat;
+    background-size: cover;
+}
+
+.bdshare-button-style0-16 a.bds_qzone:after {
+    background: url("./image/share/qq_zone.png") no-repeat;
+    background-size: cover;
+}
+
+.weixin-share{
+    width: 100%;
+    overflow: hidden;
+}
+.weixin-share img{
+    width: 70%;
+    float: right;
+}
+.i-know{
+    margin-top: 36px;
+    overflow: hidden;
+}
+.i-know img{
+    width: 40%;
+    margin: 0 auto;
+}
